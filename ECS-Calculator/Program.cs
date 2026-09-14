@@ -10,7 +10,7 @@ namespace ECS_Calculator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Консольний калькулятор v1.1 (степінь та остача)");
+           Console.WriteLine("Консольний калькулятор v1.2 (додавання/віднімання)");
         }
     }
 }
