@@ -10,6 +10,7 @@ namespace ECS_Calculator
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Консольний калькулятор v1.0");
         }
     }
 }
