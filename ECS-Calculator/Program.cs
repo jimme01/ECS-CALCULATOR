@@ -11,10 +11,10 @@ namespace ECS_Calculator
     {
         static void Main(string[] args)
         {
-           Console.WriteLine("Консольний калькулятор v1.2 (додавання/віднімання)");
-           Console.WriteLine("Введіть вираз у форматі: число1 оператор число2 (наприклад: 5 + 3)");
-           Console.WriteLine("Підтримувані оператори: +, -, *, /, ^, %");
-           Console.WriteLine("Для виходу введіть 'exit'.");
+            Console.WriteLine("Консольний калькулятор v1.2 (додавання/віднімання)");
+            Console.WriteLine("Введіть вираз у форматі: число1 оператор число2 (наприклад: 5 + 3)");
+            Console.WriteLine("Підтримувані оператори: +, -, *, /, ^, %");
+            Console.WriteLine("Для виходу введіть 'exit'.");
 
             while (true)
             {
@@ -78,7 +78,7 @@ namespace ECS_Calculator
                             Console.WriteLine("Помилка: Ділення на нуль неможливе.");
                             continue;
                         }
-                        result = PowerModulo.Modulo(number1,number2);
+                        result = PowerModulo.Modulo(number1, number2);
                         Console.WriteLine($"Результат: {result}");
                         break;
                     default:
@@ -88,6 +88,6 @@ namespace ECS_Calculator
                 Console.WriteLine("Результат: " + result);
             }
         }
-        
+
     }
 }
