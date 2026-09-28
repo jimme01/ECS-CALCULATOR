@@ -13,3 +13,17 @@ repos:
         entry: powershell -ExecutionPolicy Bypass -File scripts/check-commit-message.ps1
         language: system
         stages: [commit-msg]
+        
+      - id: dotnet-build-check
+        name: Build before push
+        entry: powershell -ExecutionPolicy Bypass -File scripts/pre-push-build.ps1
+        language: system
+        pass_filenames: false
+        stages: [pre-push]
+
+      - id: prepare-commit-msg-append
+        name: Append author and timestamp
+        entry: powershell -ExecutionPolicy Bypass -File scripts/prepare-commit-msg.ps1
+        language: system
+        pass_filenames: true
+        stages: [prepare-commit-msg]
