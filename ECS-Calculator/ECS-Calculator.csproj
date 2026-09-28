@@ -48,6 +48,7 @@
 	<Compile Include="Operations\PowerModulo.cs" />
 	<Compile Include="Operations\AddSubtract.cs" />
 	<Compile Include="Operations\MultiplyDivide.cs" />
+  <Compile Include="Operations\GcdLcm.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
