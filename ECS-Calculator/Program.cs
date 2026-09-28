@@ -14,7 +14,7 @@ namespace ECS_Calculator
             Console.WriteLine("Консольний калькулятор v1.2 (додавання/віднімання)");
             Console.WriteLine("Введіть вираз у форматі: число1 оператор число2 (наприклад: 5 + 3)");
             Console.WriteLine("Підтримувані оператори: +, -, *, /, ^, %");
-            onsole.WriteLine("Для виходу введіть 'exit'.");
+            Console.WriteLine("Для виходу введіть 'exit'.");
 
             while (true)
             {
