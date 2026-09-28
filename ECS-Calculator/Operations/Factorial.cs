@@ -8,7 +8,7 @@ namespace ECS_Calculator.Operations
         {
             if (number < 0)
             {
-                throw new ArgumentException("Факторіал визначений тільки для невід'ємних чисел..");
+                throw new ArgumentException("Факторіал визначений тільки для невід'ємних чисел.");
             }
 
             long result = 1;
