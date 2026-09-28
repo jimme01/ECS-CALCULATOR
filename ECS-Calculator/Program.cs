@@ -85,7 +85,6 @@ namespace ECS_Calculator
                         Console.WriteLine("Помилка: Непідтримуваний оператор.");
                         break;
                 }
-                Console.WriteLine("Результат: " + result);
             }
         }
 
