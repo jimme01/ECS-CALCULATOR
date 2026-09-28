@@ -10,7 +10,7 @@ namespace ECS_Calculator.Operations
         public void AddEntry(string operation)
         {
             if (string.IsNullOrWhiteSpace(operation))
-                throw new ArgumentException("Запис не може бути порожнім.");
+                throw new ArgumentException("Запис не може бути порожнім..");
 
             _history.Add($"{DateTime.Now:HH:mm:ss} - {operation}");
         }
