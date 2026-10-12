@@ -13,7 +13,7 @@ namespace ECS_Calculator
         {
             Console.WriteLine("Консольний калькулятор v1.2 (додавання/віднімання)");
             Console.WriteLine("Введіть вираз у форматі: число1 оператор число2 (наприклад: 5 + 3)");
-            Console.WriteLine("Підтримувані оператори: +, -, *, /, ^, %");
+            Console.WriteLine("Підтримувані оператори: +, -, *, /, ^, %, gcd, lcm");
             Console.WriteLine("Для виходу введіть 'exit'.");
 
             while (true)
@@ -79,6 +79,18 @@ namespace ECS_Calculator
                             continue;
                         }
                         result = PowerModulo.Modulo(number1, number2);
+                        Console.WriteLine($"Результат: {result}");
+                        break;
+                    case "gcd":
+                        long gcdA = (long)number1;
+                        long gcdB = (long)number2;
+                        result = GcdLcm.Gcd(gcdA, gcdB);
+                        Console.WriteLine($"Результат: {result}");
+                        break;
+                    case "lcm":
+                        long lcmA = (long)number1;
+                        long lcmB = (long)number2;
+                        result = GcdLcm.Lcm(lcmA, lcmB);
                         Console.WriteLine($"Результат: {result}");
                         break;
                     default:
