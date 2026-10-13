@@ -1,4 +1,13 @@
+<<<<<<< HEAD
+﻿{
+  "default": true,
+  "MD013": false,
+  "MD033": false
+}
+||||||| 2700084
+=======
 {
   "default": true,
   "MD013": false
 }
+>>>>>>> origin/main
